@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+ width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #4169E1;
+    width: 80%;
+    max-height: 90%;
+    overflow: scroll;
+}
+
+/* The Close Button */
+.close {
+    color: #4169E1;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #4169E1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#bg {
+    background-color: #4169E1;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#bg h1 {
+    font-size: 10vw;
+    font-family: "Merriweather", serif;
+    margin-bottom: 0.5em;
+    margin-top: 0.8em;
+    color: #FFF;
+}
+
+#bg #links a {
+    background-color: #FFF;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 8px;
+    box-shadow: 0 3px rgba(0,0,0,.3);
+    position: relative;
+    display: inline-block;
+}
+
+#bg #links a:hover {
+    bottom: 2px;
+}
+
+#bg i {
+    color: #708090;
+}
+
+#bg #description {
+    color: #FFF;
+    font-size: 280%;
+    font-family: "Quicksand", sans-serif;
+    padding: 0 10%;
+    margin: 5em 0 5em 0;
+    font-weight: 100;
+}
+
+#bg #contact {
+    color: #FFF;
+    font-size: 250%;
+    font-family: "Quicksand", sans-serif;
+    padding: 5% 10%;
+    font-weight: 100;
+    background-color: #4169E1;
+}
+
+#bg #contact a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 900;
+    position: relative;
+    background-color: #4169E1;
+}
+
+#bg #contact a:hover {
+    text-decoration: underline;
+    color: #FFF;
+    font-weight: 900;
+    bottom: 2px;
+}
+
+#bg .card {
+    background-color: #FFF;
+    box-shadow: 0 8px rgba(0,0,0,.3);
+}
+
+#bg h3 {
+    color: #4169E1;
+}
+
+.card img {
+    position: relative;
+    margin: 3% 0;
+    height: 45%;
+    vertical-align: left;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin: 5% 1%;
+    width: 45%; //changes box width
+    min-width: 400px;
+    height: 26em;
+    border-radius: 15px; //changes box shape
+    vertical-align: top;
+    padding: 2% 0;
+}
+
+.card:hover {
+    bottom: 2px;
+}
+
+.card h3 {
+    font-family: "Quicksand", sans-serif;
+    margin: 5px 2px 1% 2px;
+    font-size: 35pt;
+}
+
+#none #footer p {
+  font-size: 120%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#none h2 {
+    color: #4169E1;
+    margin: 2em 2em 1em 1em;
+    font-family: "Merriweather", serif;
+    font-size: 6vw;
+}
+
+#bg h2 {
+    color: #FFF;
+    margin: 2em 2em 1em 1em;
+    font-family: "Merriweather", serif;
+    font-size: 6vw;
+}
+
+#none .card {
+    background-color: #708090;
+    box-shadow: 0 8px rgba(0,0,0,.3);
+}
+
+#none h3 {
+    color: #FFF;
+    padding-top: 5px;
+}
+
+.modal h4 {
+    position: relative;
+    display: inline-block;
+    color: #4169E1;
+    font-family: "Merriweather", serif;
+    font-size: 3em;
+}
+
+.modal h4:hover {
+    text-decoration: underline;
+}
+
+.modal h5 {
+    position: relative;
+    display: inline-block;
+    font-family: "Quicksand", sans-serif;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.modal a {
+    color: #4169E1;
+}
+
+.modal a:hover {
+    color: #4169E1;
+    text-decoration: underline;
+}
+
+.modal p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.8em;
+    color: #000;
+}
+
+.modal #skills {
+    color: #4169E1;
+    font-weight: 800;
+    padding: 15px;
+}
+
+.modal .modal-content .close {
+    float: right ;
+    color: #4169E1;
+    padding: 0 15px 10px 15px;
+    border-radius: 8px;
+    font-size: 3em;
+    opacity: 0.5;
+    border: 2px solid #4169E1;
+}
+
+.modal #date {
+    color: #787777;
+    font-style: italic;
+}
+
+.modal img {
+    max-width: 500px;
+    min-width: 200px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    position: relative;
+    display: block;
+    border: 2px solid #4169E1;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+
+.modal h6 {
+    color: #4169E1;
+    font-family: "Merriweather", serif;
+    font-size: 2em;
+    font-style: italic;
+}
+
+ol {
+    margin-left: 35px;
+    font-size: 20pt;
+    font-family: "Quicksand", sans-serif;
+}
+
+#awards h6 {
+    margin-top: 1em;
+}
+
+#otherhonours h6 {
+    margin-top: 1em;
+}
+
+#publications ol {
+    margin-top: 1em;
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+        .card {
+            width: 90%;
+            min-width: 300px;
+            height: 48em;
+        }
+
+        #bg h1 {
+            font-size: 900%;
+        }
+
+        #none h2 {
+            font-size: 700%;
+        }
+
+        #bg h2 {
+            font-size: 700%;
+        }
+
+        .card h3 {
+        font-size: 60pt;
+}
+        .card img {
+            height: 55%;
+        }
+
+        #bg #description {
+    font-size: 400%;
+}
+
+#bg #contact {
+    font-size: 380%;
+ }
+    .modal h4 {
+        font-size: 5em;
+    }
+
+    .modal h5 {
+        font-size: 5em;
+    }
+
+    .modal h6 {
+        font-size: 4em;
+    }
+
+    .modal p {
+        font-size: 2.8em;
+    }
+
+    .modal .modal-content .close {
+        font-size: 5em;
+    }
+
+    #none #footer p {
+        font-size: 200%;
+    }
+
+    ol {
+        font-size: 40pt;
+        margin-left: 40px;
+    }
+
+    }
